@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/reset.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/layout.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/prettyPhoto.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/style.css" type="text/css" media="all">
+		<script type="assets/javascript" src="js/jquery-1.6.js" ></script>
+		<script type="assets/javascript" src="js/cufon-yui.js"></script>
+		<script type="assets/javascript" src="js/cufon-replace.js"></script>
+  		<script type="assets/javascript" src="js/Ubuntu_400.font.js"></script>
+  		<script type="assets/javascript" src="js/Ubuntu_700.font.js"></script>
+		<script type="assets/javascript" src="js/bgSlider.js" ></script>
+		<script type="assets/javascript" src="js/script.js" ></script>
+		<script type="assets/javascript" src="js/pages.js"></script>
+		<script type="assets/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="assets/javascript" src="js/bg.js" ></script>
+		<script type="assets/javascript" src="js/tabs.js"></script>
+		<script type="assets/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 7]>
+			<div style='clear:both;text-align:center;position:relative'>
+				<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
+			</div>
+		<![endif]-->
+	</head>
+	<body id="page1" style="background-image:url(/assets/bg_img1.jpg);
+			background-repeat:repeat;
+			background-attachment:fixed;
+			overflow:auto;
+			width:1920px;
+			height:1080px;" >
+			
+		<div class="spinner"></div>
+		<div id="bgSlider"></div>
+		<div class="extra">
+			<div class="main">
+				<div class="box">
+<!-- header -->
+					<header>
+						<h1><a href="index.html" id="logo">Thom Sander Photographer’s Portfolio</a></h1>
+						<nav>
+							<ul id="menu">
+								<li><a href="#!/page_Home"><span></span><strong>Home Page</strong></a></li>
+								<li><a href="#!/page_About"><span></span><strong>Nosotros</strong></a></li>
+								<li><a href="#!/page_Portfolio"><span></span><strong>Horarios</strong></a></li>
+								<li><a href="#!/page_Services"><span></span><strong>Mis Horarios</strong></a></li>
+								<li><a href="#!/page_Contact"><span></span><strong>Contactos</strong></a></li>
+							</ul>
+						</nav>
+					</header>
+<!--content -->
+					<article id="content">
+						<div class="ic">More Website Templates @ TemplateMonster.com -September 19th, 2011!</div>
+						<ul>
+							<%= render 'home' %>
+							<%= render 'about' %>
+							<%= render 'schedules' %>
+							<%= render 'services' %>
+							<%= render 'contact' %>
+						</ul>
+					</article>
+<!-- / content -->
+				</div>
+			</div>
+			<div class="block"></div>
+		</div>
+		<div class="bg1">
+			<div class="main">
+<!-- footer -->
+				<footer>
+					
+					<div class="col_1">
+						<a href="index.html" id="footer_logo">Thom Sander</a> Copyright 2013
+					</div>
+					<div class="col_2">
+						Realizado por <a rel="nofollow" href="http://www.facebook.com/Unrc20" target="_blank">code-team</a>
+						<!-- {%FOOTER_LINK} -->
+					</div>
+				</footer>
+<!-- / footer-->
+			</div>
+		</div>
+		<script type="text/javascript"> Cufon.now(); </script>
+		<script>
+		$(window).load(function() {
+			$('.spinner').fadeOut();
+			$('body').css({overflow:'inherit'})
+		})
+		</script>
+	</body>
+</html>

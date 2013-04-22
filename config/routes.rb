@@ -1,4 +1,9 @@
 UnrcWeb::Application.routes.draw do
+ 
+
+  get "static_page/index"
+  match '/schedules/:id',  to: 'static_page_controller#show_image'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
