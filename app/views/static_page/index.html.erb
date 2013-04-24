@@ -20,18 +20,7 @@
 			<div class="main">
 				<div class="box">
 <!-- header -->
-					<header>
-						<h1><a href="index.html" id="logo">Thom Sander Photographer’s Portfolio</a></h1>
-						<nav>
-							<ul id="menu">
-								<li><a href="#!/page_Home"><span></span><strong>Home Page</strong></a></li>
-								<li><a href="#!/page_About"><span></span><strong>Nosotros</strong></a></li>
-								<li><a href="#!/page_Portfolio"><span></span><strong>Horarios</strong></a></li>
-								<li><a href="#!/page_Services"><span></span><strong>Mis Horarios</strong></a></li>
-								<li><a href="#!/page_Contact"><span></span><strong>Contactos</strong></a></li>
-							</ul>
-						</nav>
-					</header>
+		    		<%= render 'layouts/header' %>
 <!--content -->
 					<article id="content">
 						<div class="ic">More Website Templates @ TemplateMonster.com -September 19th, 2011!</div>
@@ -51,19 +40,7 @@
 		<div class="bg1">
 			<div class="main">
 <!-- footer -->
-				<footer>
-					<div class="bg_spinner"></div>
-					<ul class="pagination">
-						<li class="current"><a href="/assets/bg_img1.jpg">1</a></li>
-					</ul>
-					<div class="col_1">
-						<a href="index.html" id="footer_logo">Thom Sander</a> Copyright 2013
-					</div>
-					<div class="col_2">
-						Realizado por <a rel="nofollow" href="http://www.facebook.com/Unrc20" target="_blank">code-team</a>
-						<!-- {%FOOTER_LINK} -->
-					</div>
-				</footer>
+				<%= render 'layouts/footer' %>				
 <!-- / footer-->
 			</div>
 		</div>
